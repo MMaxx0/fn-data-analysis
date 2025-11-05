@@ -1,0 +1,29 @@
+.modern-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(200, 200, 200, 0.4) transparent; /* Firefox */
+  scroll-behavior: smooth;
+}
+
+/* For Chrome, Edge, Safari */
+.modern-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.modern-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modern-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(200, 200, 200, 0.4);
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.modern-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(200, 200, 200, 0.6);
+}
+
+.modern-scrollbar::-webkit-scrollbar-corner {
+  background: transparent;
+}
